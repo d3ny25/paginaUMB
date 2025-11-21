@@ -6,13 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UES San José del Rincón</title>
     <link rel="stylesheet" href="/Practicas/2doParcial/EXAMEN/styles/estilos.css">
+
+    <meta name="description"
+        content="UES San José del Rincón – Universidad Mexiquense del Bicentenario. Conoce nuestra oferta educativa, noticias, eventos, valores institucionales y formas de contacto.">
+    <meta name="keywords"
+        content="UES San José del Rincón, UMB, Universidad Mexiquense del Bicentenario, educación superior, ingeniería en sistemas, innovación agrícola sustentable, contaduría, universidad Estado de México">
+    <meta name="author" content="Universidad Mexiquense del Bicentenario">
+
+    <meta property="og:title" content="UES San José del Rincón | Universidad Mexiquense del Bicentenario">
+    <meta property="og:description"
+        content="Formamos profesionistas con valores, innovación y compromiso. Conoce nuestra oferta educativa y actividades.">
+    <meta property="og:type" content="website">
+
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
 
     <header class="header">
 
-        <!-- FILA SUPERIOR -->
         <div class="header-top">
             <div class="logo">
                 <img src="../img/logo.png" alt="Logo UMB">
@@ -221,11 +233,23 @@
         <h2>Contacto</h2>
 
         <form id="contactForm">
-            <input type="text" name="nombre" placeholder="Nombre" required>
-            <input type="email" name="correo" placeholder="Correo" required>
-            <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+
+            <!-- NOMBRE -->
+            <input type="text" name="nombre" placeholder="Nombre completo" required minlength="3" maxlength="40"
+                pattern="[A-Za-zÁÉÍÓÚÑáéíóúñ ]{3,40}" title="Solo letras, mínimo 3 caracteres.">
+
+            <!-- CORREO -->
+            <input type="email" name="correo" placeholder="Correo electrónico" required maxlength="60"
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}"
+                title="Introduce un correo válido, ej: ejemplo@correo.com">
+
+            <!-- MENSAJE -->
+            <textarea name="mensaje" placeholder="Escribe tu mensaje" required minlength="10" maxlength="300"
+                title="Tu mensaje debe tener entre 10 y 300 caracteres."></textarea>
+
             <button type="submit">Enviar</button>
         </form>
+
 
         <div class="mapa">
             <iframe
@@ -904,22 +928,22 @@
     </script>
 
     <script>
-    const hamburger = document.getElementById("hamburger");
-    const navLinks = document.getElementById("nav-links");
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("nav-links");
 
-    hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("activado");
-        navLinks.classList.toggle("activo");
-    });
-
-    // Cerrar al hacer clic en un enlace
-    document.querySelectorAll("#nav-links a").forEach(link => {
-        link.addEventListener("click", () => {
-            hamburger.classList.remove("activado");
-            navLinks.classList.remove("activo");
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("activado");
+            navLinks.classList.toggle("activo");
         });
-    });
-</script>
+
+        // Cerrar al hacer clic en un enlace
+        document.querySelectorAll("#nav-links a").forEach(link => {
+            link.addEventListener("click", () => {
+                hamburger.classList.remove("activado");
+                navLinks.classList.remove("activo");
+            });
+        });
+    </script>
 
 
 
