@@ -35,7 +35,6 @@
                 <h2>Unidad de Estudios Superiores San José del Rincón</h2>
             </div>
 
-            <!-- Botón hamburguesa (solo móvil) -->
             <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
@@ -43,7 +42,6 @@
             </div>
         </div>
 
-        <!-- MENÚ INFERIOR -->
         <nav class="header-nav">
             <ul id="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
@@ -60,7 +58,6 @@
 
     <section id="inicio">
 
-        <!-- CARRUSEL -->
         <div class="carrusel">
             <div class="slide"><img src="../img/banner1.jpg" alt="Imagen 1 UMB"></div>
             <div class="slide"><img src="../img/banner2.jpg" alt="Imagen 2 UMB"></div>
@@ -69,7 +66,6 @@
             <div class="slide"><img src="../img/banner5.jpg" alt="Imagen 3 UMB"></div>
         </div>
 
-        <!-- TEXTO DE BIENVENIDA -->
         <div class="bienvenida">
             <h1>Bienvenido a la UES San José del Rincón</h1>
             <p>Formando profesionistas con valores, innovación y compromiso.</p>
@@ -83,12 +79,10 @@
 
         <div class="contenido-nosotros">
 
-            <!-- IMAGEN DEL CAMPUS -->
             <div class="nosotros-img">
                 <img src="../img/campus.jpg" alt="Campus UES UMB">
             </div>
 
-            <!-- TEXTO -->
             <div class="nosotros-texto">
 
                 <p><strong>Coordinador:</strong> Lcdo. Luis Ramón Vega Ramírez</p>
@@ -167,7 +161,6 @@
         </div>
     </section>
 
-    <!-- Modal -->
     <div id="modal-overlay" class="oculto">
         <div id="modal">
             <span id="cerrar-modal">&times;</span>
@@ -234,16 +227,13 @@
 
         <form id="contactForm">
 
-            <!-- NOMBRE -->
             <input type="text" name="nombre" placeholder="Nombre completo" required minlength="3" maxlength="40"
                 pattern="[A-Za-zÁÉÍÓÚÑáéíóúñ ]{3,40}" title="Solo letras, mínimo 3 caracteres.">
 
-            <!-- CORREO -->
             <input type="email" name="correo" placeholder="Correo electrónico" required maxlength="60"
                 pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}"
                 title="Introduce un correo válido, ej: ejemplo@correo.com">
 
-            <!-- MENSAJE -->
             <textarea name="mensaje" placeholder="Escribe tu mensaje" required minlength="10" maxlength="300"
                 title="Tu mensaje debe tener entre 10 y 300 caracteres."></textarea>
 
@@ -302,14 +292,14 @@
         const cerrar = document.getElementById("cerrar-modal");
         const modalContent = document.getElementById("modal-content");
 
-        /* ============================================
+        /* 
            CONTENIDO DINÁMICO DE CADA CARRERA
-        ============================================ */
+         */
         const carreras = {
 
-            /* ===================================================
+            /* 
                INGENIERÍA EN SISTEMAS COMPUTACIONALES
-            =================================================== */
+             */
             "sistemas": `
             <h2>Ingeniería en Sistemas Computacionales</h2>
 
@@ -488,9 +478,9 @@
             </div>
         `,
 
-            /* ===================================================
+            /* 
                INGENIERÍA EN INNOVACIÓN AGRÍCOLA SUSTENTABLE
-            =================================================== */
+             */
             "agricola": `
             <h2>Ingeniería en Innovación Agrícola Sustentable</h2>
 
@@ -854,9 +844,9 @@
 
         };
 
-        /* ============================================
+        /* 
            EVENTOS PARA ABRIR MODALES
-        ============================================ */
+         */
         botones.forEach(boton => {
             boton.addEventListener("click", () => {
                 const carrera = boton.dataset.carrera;
@@ -866,9 +856,9 @@
             });
         });
 
-        /* ============================================
+        /* 
            CERRAR MODAL
-        ============================================ */
+         */
         cerrar.addEventListener("click", () => {
             modalOverlay.classList.add("oculto");
         });
@@ -879,9 +869,9 @@
             }
         });
 
-        /* ============================================
+        /* 
            ACTIVAR EFECTO DE VOLTEO EN TARJETAS
-        ============================================ */
+         */
         function activarFlip() {
             const tarjetas = document.querySelectorAll(".semestre-card");
             tarjetas.forEach(tarjeta => {
@@ -944,9 +934,6 @@
             });
         });
     </script>
-
-
-
 
 
 </body>
