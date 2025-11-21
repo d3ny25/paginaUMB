@@ -1,0 +1,915 @@
+/* ===========================
+   RESETEO GENERAL
+   =========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F4F4F4; 
+    color: #000000; 
+    line-height: 1.6;
+    padding-top: 60px; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+/* ===========================
+   HEADER / NAV
+   =========================== */
+header {
+    background-color: #FFFFFF;
+    border-bottom: 4px solid #8DC63F; 
+    width: 100%;
+}
+
+/* ----- FILA SUPERIOR (LOGO + TÍTULO) ----- */
+.header-top {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 25px;
+}
+
+/* Logo */
+.header-top .logo img {
+    width: 110px;
+}
+
+/* Títulos */
+.header-top .titulo h1 {
+    font-size: 22px;
+    margin: 0;
+    color: #000000;
+    font-weight: 800;
+}
+
+.header-top .titulo h2 {
+    font-size: 16px;
+    margin: 0;
+    color: #5A8E24; 
+    font-weight: 600;
+}
+
+/* ----- MENÚ INFERIOR ----- */
+.header-nav {
+    width: 100%;
+    background: #F4F4F4; 
+    border-top: 2px solid #5A8E24;
+    position: fixed;
+    top: 0; 
+}
+
+.header-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    padding: 12px 0;
+    margin: 0;
+}
+
+.header-nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #5A8E24; 
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.header-nav a:hover {
+    color: #C60521; 
+}
+
+/* ======== SECCIÓN INICIO ======== */
+#inicio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+}
+
+/* ======== CARRUSEL ======== */
+.carrusel {
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carrusel .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: deslizar 30s infinite;
+    opacity: 0;
+}
+
+.carrusel .slide:nth-child(1) { animation-delay: 0s; }
+.carrusel .slide:nth-child(2) { animation-delay: 6s; }
+.carrusel .slide:nth-child(3) { animation-delay: 12s; }
+.carrusel .slide:nth-child(4) { animation-delay: 18s; }
+.carrusel .slide:nth-child(5) { animation-delay: 24s; }
+
+.carrusel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Animación del carrusel */
+@keyframes deslizar {
+    0%   { opacity: 0; }
+    10%  { opacity: 1; }
+    30%  { opacity: 1; }
+    40%  { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* ======== TEXTO DE BIENVENIDA ======== */
+.bienvenida {
+    width: 100%;
+    background: linear-gradient(90deg, #8DC63F, #5A8E24);
+    padding: 35px 15px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.bienvenida h1 {
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+}
+
+.bienvenida p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+
+/* ======== SECCIÓN QUIÉNES SOMOS ======== */
+
+#nosotros {
+    padding: 50px 80px;
+    background-color: #FFFFFF;
+    border-left: 10px solid #8DC63F;
+    margin-bottom: 40px;
+}
+
+#nosotros h2 {
+    color: #5A8E24;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+/* CONTENEDOR */
+.contenido-nosotros {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* IMAGEN */
+.nosotros-img img {
+    width: 380px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.15);
+}
+
+/* TEXTO */
+.nosotros-texto {
+    flex: 1;
+    min-width: 300px;
+    color: #333;
+}
+
+.nosotros-texto h3 {
+    margin-top: 18px;
+    color: #C60521; 
+}
+
+.nosotros-texto p {
+    margin-top: 8px;
+    line-height: 1.5;
+}
+
+/* LISTA DE VALORES */
+.lista-valores {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.lista-valores li {
+    margin-bottom: 8px;
+}
+
+/* ===========================
+   SECCIONES GENERALES
+   =========================== */
+section {
+    padding: 50px 80px;
+    background-color: #FFFFFF;
+    margin-bottom: 30px;
+    border-left: 10px solid #8DC63F;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #5A8E24;
+}
+
+/* ===========================
+   OFERTA EDUCATIVA
+   =========================== */
+.lista-carreras {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.carrera {
+    background-color: #F4F4F4;
+    padding: 20px;
+    border-left: 6px solid #C60521; 
+    border-radius: 6px;
+}
+
+.carrera h3 {
+    color: #5A8E24;
+}
+
+
+/* ===========================
+   NOTICIAS Y AVISOS
+=========================== */
+
+#noticias {
+    padding: 50px 80px;
+    background: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+#noticias h2 {
+    color: #5A8E24;
+    margin-bottom: 25px;
+}
+
+/* GRID */
+.lista-noticias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* TARJETA */
+.noticia {
+    background-color: #FFFFFF;
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+    transition: 0.3s ease;
+}
+
+.noticia:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.18);
+}
+
+/* IMAGEN */
+.noticia img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+/* CONTENIDO INTERNO */
+.noticia-info {
+    padding: 15px 15px 20px;
+    border-left: 6px solid #F2C024; 
+}
+
+.noticia h3 {
+    color: #5A8E24; 
+    margin-bottom: 5px;
+}
+
+/* FECHA */
+.noticia .fecha {
+    font-size: 14px;
+    color: #C60521; 
+    font-weight: bold;
+}
+
+/* DESCRIPCIÓN */
+.noticia p {
+    margin: 10px 0;
+    color: #333;
+}
+
+/* LUGAR */
+.noticia .lugar {
+    display: block;
+    margin-top: 8px;
+    color: #000;
+    font-size: 14px;
+}
+
+
+/* ===========================
+   CONTACTO
+   =========================== */
+#contacto {
+    margin-top: 40px;
+}
+
+.informacion-contacto p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.whatsapp-link {
+    color: #25D366;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+}
+
+.wa-icon {
+    width: 22px;
+    margin-right: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 2px solid #8DC63F;
+    outline: none;
+}
+
+button {
+    background-color: #5A8E24;
+    color: #FFFFFF;
+    padding: 12px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #C60521;
+}
+
+.mapa {
+    margin-top: 25px;
+}
+
+
+/* ===========================
+   FOOTER
+   =========================== */
+footer {
+    background-color: #5A8E24;
+    color: #FFFFFF;
+    padding: 30px 20px;
+}
+
+.footer-contenido {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.footer-info h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.footer-info p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+
+/* Redes sociales */
+.footer-redes {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-redes .icono {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #F2C024; 
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.3s;
+}
+
+.footer-redes .icono:hover {
+    background-color: #C60521; 
+}
+
+/* Íconos usando imágenes SVG */
+.footer-redes .fb {
+    background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg');
+}
+
+.footer-redes .ig {
+    background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg');
+}
+
+.footer-redes .yt {
+    background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg');
+}
+
+
+/* ===============================
+   TARJETAS DE CARRERAS
+================================*/
+.lista-carreras {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.carrera {
+    background: #FFFFFF;
+    border: 2px solid #5A8E24; 
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.carrera:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.carrera img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.carrera h3 {
+    margin: 10px 0 5px 0;
+    color: #5A8E24; 
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.carrera p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.btn-info {
+    margin-top: 10px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #F2C024; 
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-info:hover {
+    background: #C60521; 
+    color: #ffffff;
+}
+
+/* ===============================
+   MODAL
+================================*/
+#modal-overlay.oculto {
+    display: none;
+}
+
+#modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+#modal {
+    background: #FFFFFF;
+    width: 75%;
+    max-width: 880px;
+    padding: 30px;
+    border-radius: 14px;
+    position: relative;
+    box-shadow: 0 0 25px rgba(0,0,0,0.3);
+    max-height: 82vh;
+    overflow-y: auto;
+    animation: aparecer 0.3s ease-out;
+}
+
+/* Animación suave */
+@keyframes aparecer {
+    from { opacity: 0; transform: scale(0.95); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
+/* Cerrar modal */
+#cerrar-modal {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 32px;
+    cursor: pointer;
+    color: #C60521; 
+    transition: 0.3s;
+}
+
+#cerrar-modal:hover {
+    color: #F2C024; 
+}
+
+/* CONTENIDO INTERNO DEL MODAL */
+#modal-content h2 {
+    color: #5A8E24;
+    margin-bottom: 10px;
+}
+
+#modal-content h3 {
+    margin-top: 15px;
+    color: #C60521;
+}
+
+#modal-content p {
+    margin-top: 10px;
+    color: #333;
+}
+
+#modal-content ul {
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+#modal-content ul li {
+    margin-bottom: 5px;
+}
+
+/* ===============================
+   TARJETAS VOLTEABLES (SEMESTRES)
+================================*/
+.semestres {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.semestre-card {
+    width: 220px;
+    height: 210px; 
+    perspective: 500px;
+    cursor: pointer;
+    position: relative;
+}
+
+.semestre-card .lado {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    padding: 20px; 
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    flex-direction: column; 
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+    border: 2px solid #5A8E24;
+    overflow-y: auto; 
+}
+
+
+/* Frente */
+.frente {
+    background: #8DC63F; 
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Reverso */
+.atras {
+    background: #FFFFFF;
+    color: #333;
+    transform: rotateY(180deg);
+}
+
+/* Animación de giro */
+.semestre-card.volteada .frente {
+    transform: rotateY(180deg);
+}
+
+.semestre-card.volteada .atras {
+    transform: rotateY(0deg);
+}
+
+/* =====================================================
+   RESPONSIVIDAD GENERAL
+===================================================== */
+
+/* Pantallas grandes (mejora contenedores muy amplios) */
+@media (min-width: 1400px) {
+    body {
+        margin: 0 auto;
+        max-width: 1400px;
+    }
+}
+
+/* =====================================================
+   TABLETS Y PANTALLAS MEDIAS (768px – 1024px)
+===================================================== */
+@media (max-width: 1024px) {
+
+    /* Ajusta padding general */
+    section, #nosotros, #noticias {
+        padding: 40px 40px;
+    }
+
+    .header-top .titulo h1 {
+        font-size: 20px;
+    }
+
+    .header-top .titulo h2 {
+        font-size: 15px;
+    }
+
+    .bienvenida h1 {
+        font-size: 2rem;
+    }
+
+    .contenido-nosotros {
+        gap: 25px;
+    }
+
+    .carrera img,
+    .noticia img {
+        height: 150px;
+    }
+}
+
+/* =====================================================
+   MÓVILES GRANDES (480px – 768px)
+===================================================== */
+@media (max-width: 768px) {
+
+    /* HEADER: Logo y títulos apilados */
+    .header-top {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .header-top .logo img {
+        width: 90px;
+    }
+
+    .header-top .titulo h1 {
+        font-size: 18px;
+    }
+
+    .header-top .titulo h2 {
+        font-size: 14px;
+    }
+
+    /* MENÚ FIJO: ahora vertical y usable */
+    .header-nav ul {
+        flex-direction: column;
+        gap: 12px;
+        padding: 14px 0;
+    }
+
+    .header-nav a {
+        font-size: 15px;
+    }
+
+    body {
+        padding-top: 160px; 
+    }
+
+    /* Carrusel más pequeño */
+    .carrusel {
+        height: 260px;
+    }
+
+    .bienvenida h1 {
+        font-size: 1.7rem;
+    }
+
+    section,
+    #nosotros,
+    #noticias {
+        padding: 35px 25px;
+    }
+
+    /* Nosotros */
+    .contenido-nosotros {
+        flex-direction: column;
+    }
+
+    .nosotros-img img {
+        width: 100%;
+    }
+
+    /* Carreras */
+    .lista-carreras {
+        grid-template-columns: 1fr;
+    }
+
+    /* Noticias */
+    .lista-noticias {
+        grid-template-columns: 1fr;
+    }
+
+    /* Modal más pequeño */
+    #modal {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #modal-content {
+        font-size: 0.9rem;
+    }
+
+    /* Tarjetas volteables */
+    .semestre-card {
+        width: 100%;
+        height: 230px;
+    }
+}
+
+/* =====================================================
+   MÓVILES PEQUEÑOS (menos de 480px)
+===================================================== */
+@media (max-width: 480px) {
+
+    body {
+        padding-top: 170px;
+    }
+
+    /* Títulos */
+    .bienvenida h1 {
+        font-size: 1.5rem;
+    }
+
+    .bienvenida p {
+        font-size: 1rem;
+    }
+
+    /* Secciones */
+    section, #nosotros, #noticias {
+        padding: 25px 18px;
+    }
+
+    /* Texto más grande para lectura móvil */
+    p, li {
+        font-size: 15px;
+    }
+
+    /* Noticias */
+    .noticia img {
+        height: 130px;
+    }
+
+    .noticia h3 {
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 20px 15px;
+    }
+
+    .footer-info h3 {
+        font-size: 1.1rem;
+    }
+
+    .footer-redes .icono {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+
+
+/* ===============================
+   BOTÓN HAMBURGUESA
+================================ */
+.hamburger {
+    display: none;
+    width: 35px;
+    height: 26px;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 4px;
+    width: 100%;
+    background: #5A8E24;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+/* ===============================
+   VERSIÓN MÓVIL
+================================ */
+@media (max-width: 768px) {
+
+    /* Mostrar hamburguesa */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Ajustar título para que quepa mejor */
+    .titulo h1 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .titulo h2 {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    /* MENÚ OCULTO POR DEFECTO */
+    .header-nav ul {
+        display: none;
+        flex-direction: column;
+        background: #F4F4F4;
+        width: 100%;
+        padding: 20px 0;
+        border-top: 2px solid #5A8E24;
+    }
+
+    /* CUANDO SE ABRE */
+    .header-nav ul.activo {
+        display: flex;
+        animation: slideDown 0.3s ease;
+    }
+
+    @keyframes slideDown {
+        from { opacity: 0; transform: translateY(-10px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Animación hamburguesa → X */
+    .hamburger.activado span:nth-child(1) {
+        transform: rotate(45deg) translateY(10px);
+    }
+    .hamburger.activado span:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.activado span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-10px);
+    }
+}

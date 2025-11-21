@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UES San José del Rincón</title>
+    <link rel="stylesheet" href="/Practicas/2doParcial/EXAMEN/styles/estilos.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <!-- FILA SUPERIOR -->
+        <div class="header-top">
+            <div class="logo">
+                <img src="../img/logo.png" alt="Logo UMB">
+            </div>
+
+            <div class="titulo">
+                <h1>Universidad Mexiquense del Bicentenario</h1>
+                <h2>Unidad de Estudios Superiores San José del Rincón</h2>
+            </div>
+
+            <!-- Botón hamburguesa (solo móvil) -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- MENÚ INFERIOR -->
+        <nav class="header-nav">
+            <ul id="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#oferta">Oferta Educativa</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+
+    <section id="inicio">
+
+        <!-- CARRUSEL -->
+        <div class="carrusel">
+            <div class="slide"><img src="../img/banner1.jpg" alt="Imagen 1 UMB"></div>
+            <div class="slide"><img src="../img/banner2.jpg" alt="Imagen 2 UMB"></div>
+            <div class="slide"><img src="../img/banner3.jpg" alt="Imagen 3 UMB"></div>
+            <div class="slide"><img src="../img/banner4.jpg" alt="Imagen 3 UMB"></div>
+            <div class="slide"><img src="../img/banner5.jpg" alt="Imagen 3 UMB"></div>
+        </div>
+
+        <!-- TEXTO DE BIENVENIDA -->
+        <div class="bienvenida">
+            <h1>Bienvenido a la UES San José del Rincón</h1>
+            <p>Formando profesionistas con valores, innovación y compromiso.</p>
+        </div>
+
+    </section>
+
+
+    <section id="nosotros">
+        <h2>Quiénes Somos</h2>
+
+        <div class="contenido-nosotros">
+
+            <!-- IMAGEN DEL CAMPUS -->
+            <div class="nosotros-img">
+                <img src="../img/campus.jpg" alt="Campus UES UMB">
+            </div>
+
+            <!-- TEXTO -->
+            <div class="nosotros-texto">
+
+                <p><strong>Coordinador:</strong> Lcdo. Luis Ramón Vega Ramírez</p>
+                <p><strong>Clave de Institución:</strong> 15ESU0016J</p>
+
+                <h3>Misión</h3>
+                <p>
+                    Formar profesionistas íntegros, críticos y solidarios, capaces de comprender y actuar en un mundo en
+                    constante transformación.
+                    La UMB impulsa una formación integral de calidad, con base en el desarrollo de conocimientos,
+                    habilidades, competencias,
+                    actitudes y valores, que favorezcan la inclusión, la equidad, el desarrollo sostenible y la
+                    responsabilidad social,
+                    para contribuir al progreso regional, estatal y nacional.
+                </p>
+
+                <h3>Visión</h3>
+                <p>
+                    Ser una institución de educación superior pública reconocida en el Estado de México y a nivel
+                    nacional, por su excelencia académica,
+                    su compromiso social y su impacto en el desarrollo sostenible. La UMB aspira a consolidarse como un
+                    nodo de transformación
+                    y desarrollo regional, mediante programas educativos pertinentes, flexibles y vinculados con los
+                    sectores productivos y sociales,
+                    fomentando una sociedad inclusiva, justa y equitativa.
+                </p>
+
+                <h3>Valores</h3>
+
+                <ul class="lista-valores">
+                    <li><strong>Humanismo:</strong> Impulsa el pensamiento crítico, la racionalidad y el trato
+                        equitativo.</li>
+                    <li><strong>Verdad:</strong> Base del conocimiento auténtico y la integridad personal.</li>
+                    <li><strong>Compromiso:</strong> Entrega y responsabilidad para cumplir con lo que se nos confía.
+                    </li>
+                    <li><strong>Lealtad:</strong> Fidelidad, honor y gratitud hacia la comunidad.</li>
+                    <li><strong>Servicio:</strong> Colaboración espontánea para mejorar la vida de los demás.</li>
+                    <li><strong>Trascendencia:</strong> Romper paradigmas y buscar nuevos significados para evolucionar.
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="oferta">
+        <h2>Oferta Educativa</h2>
+
+        <div class="lista-carreras">
+
+            <article class="carrera">
+                <img src="../img/sistemas.jpg" alt="Ingeniería en Sistemas">
+                <h3>Ingeniería en Sistemas Computacionales</h3>
+                <p>Formación sólida en diseño y análisis de sistemas, programación y desarrollo de software.</p>
+                <button class="btn-info" data-carrera="sistemas">Ver más información</button>
+            </article>
+
+            <article class="carrera">
+                <img src="../img/agricultura.jpg" alt="Ingeniería en Innovación">
+                <h3>Ingeniería en Innovación Agrícola Sustentable</h3>
+                <p>Programa enfocado en desarrollar soluciones innovadoras para el sector agrícola, impulsando la
+                    sustentabilidad y el uso eficiente de los recursos.</p>
+                <button class="btn-info" data-carrera="agricola">Ver más información</button>
+            </article>
+
+            <article class="carrera">
+                <img src="../img/contaduria.png" alt="Licenciatura en Contaduría">
+                <h3>Licenciatura en Contaduría</h3>
+                <p>Formación integral orientada al análisis financiero, auditoría, administración de recursos y
+                    cumplimiento fiscal en organizaciones públicas y privadas.</p>
+                <button class="btn-info" data-carrera="contaduria">Ver más información</button>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal-overlay" class="oculto">
+        <div id="modal">
+            <span id="cerrar-modal">&times;</span>
+            <div id="modal-content">
+            </div>
+        </div>
+    </div>
+
+
+    <section id="noticias">
+        <h2>Noticias y Avisos</h2>
+
+        <div class="lista-noticias">
+
+            <article class="noticia">
+                <img src="../img/adicciones.webp" alt="adicciones">
+                <div class="noticia-info">
+                    <h3>Platica sobre adicciones: consecuencias del uso de fentanilo</h3>
+                    <span class="fecha">25 de noviembre 2025</span>
+                    <p>Charla informativa sobre los riesgos del consumo de fentanilo y su impacto en la salud física,
+                        emocional y social.</p>
+                    <span class="lugar"><strong>Lugar:</strong> Aula magna</span>
+                </div>
+            </article>
+
+            <article class="noticia">
+                <img src="../img/valores.jpg" alt="valores">
+                <div class="noticia-info">
+                    <h3>Platica sobre los valores</h3>
+                    <span class="fecha">26 de noviembre 2025</span>
+                    <p>Conferencia enfocada en la importancia de los valores en la vida diaria y su aplicación dentro y
+                        fuera del entorno escolar.</p>
+                    <span class="lugar"><strong>Lugar:</strong> Aula magna</span>
+                </div>
+            </article>
+
+            <article class="noticia">
+                <img src="../img/semanaa.jpg" alt="Semana académica">
+                <div class="noticia-info">
+                    <h3>Inicio de la semana académica</h3>
+                    <span class="fecha">02 de diciembre 2025</span>
+                    <p>Semana llena de actividades culturales, académicas y mucho más.</p>
+                    <span class="lugar"><strong>Lugar:</strong> Aula magna</span>
+                </div>
+            </article>
+
+            <article class="noticia">
+                <img src="../img/robots.jpg" alt="Batalla de robots">
+                <div class="noticia-info">
+                    <h3>Batalla de robots</h3>
+                    <span class="fecha">05 de diciembre 2025</span>
+                    <p>Evento donde los alumnos de Ingeniería en Sistemas Computacionales presentarán robots creados por
+                        ellos y participarán en diversas competencias.</p>
+                    <span class="lugar"><strong>Lugar:</strong> Plaza civica</span>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+
+        <form id="contactForm">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="correo" placeholder="Correo" required>
+            <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8337.635365578872!2d-100.15192610584518!3d19.663640771920917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2eccbc758302b%3A0x6277bfbed3b52399!2sUnidad%20de%20Estudios%20Superiores%2C%20San%20Jos%C3%A9%20del%20Rinc%C3%B3n!5e0!3m2!1ses-419!2smx!4v1763689964731!5m2!1ses-419!2smx"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+
+        </div>
+        <div class="informacion-contacto">
+            <p><strong>Dirección:</strong> AVENIDA UNIVERSIDAD SN, COLONIA LAS TINAJAS, 50660 SAN JOSÉ DEL RINCÓN,
+                ESTADO DE MÉXICO.</p>
+
+            <p><strong>Correo:</strong>
+                <a href="mailto:uessanjosedelrincon@umb.mx">uessanjosedelrincon@umb.mx</a>
+            </p>
+
+            <p>
+                <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=5217121242234" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" class="wa-icon">
+                    712 124 2234
+                </a>
+            </p>
+        </div>
+
+    </section>
+
+
+    <footer>
+        <div class="footer-contenido">
+
+            <div class="footer-info">
+                <h3>Universidad Mexiquense del Bicentenario</h3>
+                <p>Unidad de Estudios Superiores San José del Rincón</p>
+                <p>© 2025 Todos los derechos reservados</p>
+            </div>
+
+            <div class="footer-redes">
+                <a href="https://www.facebook.com/UMBSanJosedelRincon?locale=es_LA" class="icono fb"
+                    title="Facebook UMB" target="_blank"></a>
+                <a href="#" class="icono ig" title="Instagram UMB" target="_blank"></a>
+                <a href="#" class="icono yt" title="YouTube UMB" target="_blank"></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        const botones = document.querySelectorAll(".btn-info");
+        const modalOverlay = document.getElementById("modal-overlay");
+        const cerrar = document.getElementById("cerrar-modal");
+        const modalContent = document.getElementById("modal-content");
+
+        /* ============================================
+           CONTENIDO DINÁMICO DE CADA CARRERA
+        ============================================ */
+        const carreras = {
+
+            /* ===================================================
+               INGENIERÍA EN SISTEMAS COMPUTACIONALES
+            =================================================== */
+            "sistemas": `
+            <h2>Ingeniería en Sistemas Computacionales</h2>
+
+            <h3>Objetivo</h3>
+            <p>
+                Formar profesionales con un conocimiento sólido en técnicas de diseño y análisis de sistemas
+                de información, programación, ambientes distribuidos e ingeniería de software.
+            </p>
+
+            <h3>Te puede interesar si cuentas con:</h3>
+            <ul>
+                <li>Interés en desarrollar proyectos informáticos.</li>
+            </ul>
+
+            <h3>Perfil de egreso</h3>
+            <ul>
+                <li>Desarrollar, implementar y administrar software.</li>
+                <li>Diseñar interfaces hombre-máquina y máquina-máquina.</li>
+                <li>Conocer hardware y mantener aplicaciones eficientes.</li>
+                <li>Diseñar y administrar bases de datos.</li>
+                <li>Integrar soluciones computacionales con diversas tecnologías.</li>
+            </ul>
+
+            <h3>Campo laboral</h3>
+            <ul>
+                <li>Empresa propia o freelance.</li>
+                <li>Asesoría tecnológica.</li>
+                <li>Desarrollo de software, hardware y redes.</li>
+                <li>Mantenimiento de redes y equipos de cómputo.</li>
+            </ul>
+
+            <h3>Asignaturas por semestre</h3>
+
+            <div class="semestres">
+
+                <!-- ================= PRIMER SEMESTRE ================= -->
+                <div class="semestre-card">
+                    <div class="lado frente"><span>Primer semestre</span></div>
+                    <div class="lado atras">
+                        <ul>
+                            <li>Dibujo</li>
+                            <li>Fundamentos de Programación</li>
+                            <li>Matemáticas para Computación</li>
+                            <li>Matemáticas I</li>
+                            <li>Física I</li>
+                            <li>Seminario de Ética</li>
+                            <li>Introducción a la Ingeniería en Sistemas</li>
+                            <li>Inglés I</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ================= SEGUNDO SEMESTRE ================= -->
+                <div class="semestre-card">
+                    <div class="lado frente"><span>Segundo semestre</span></div>
+                    <div class="lado atras">
+                        <ul>
+                            <li>Probabilidad y Estadística</li>
+                            <li>Programación Orientada a Objetos</li>
+                            <li>Química</li>
+                            <li>Matemáticas II</li>
+                            <li>Fundamentos de Investigación</li>
+                            <li>Desarrollo Sustentable</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ================= TERCER SEMESTRE ================= -->
+                <div class="semestre-card">
+                    <div class="lado frente"><span>Tercer semestre</span></div>
+                    <div class="lado atras">
+                        <ul>
+                            <li>Administración</li>
+                            <li>Tópicos Selectos de Administración</li>
+                            <li>Estructura de Datos</li>
+                            <li>Matemáticas III</li>
+                            <li>Física II</li>
+                            <li>Matemáticas IV</li>
+                            <li>Inglés III</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ================= CUARTO SEMESTRE ================= -->
+                <div class="semestre-card">
+                    <div class="lado frente"><span>Cuarto semestre</span></div>
+                    <div class="lado atras">
+                        <ul>
+                            <li>Teoría de la Computación</li>
+                            <li>Taller de Investigación I</li>
+                            <li>Fundamentos de Bases de Datos</li>
+                            <li>Matemáticas V</li>
+                            <li>Circuitos Eléctricos y Electrónicos</li>
+                            <li>Investigación de Operaciones</li>
+                            <li>Inglés IV</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ================= QUINTO SEMESTRE ================= -->
+                <div class="semestre-card">
+                    <div class="lado frente"><span>Quinto semestre</span></div>
+                    <div class="lado atras">
+                        <ul>
+                            <li>Programación de Sistemas</li>
+                            <li>Teoría de las Telecomunicaciones</li>
+                            <li>Taller de Bases de Datos</li>
+                            <li>Métodos Numéricos</li>
+                            <li>Arquitectura de Computadoras</li>
+                            <li>Lenguaje Ensamblador</li>
+                            <li>Inglés V</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ================= SEXTO SEMESTRE ================= -->
+                <div class="semestre-card">
+                    <div class="lado frente"><span>Sexto semestre</span></div>
+                    <div class="lado atras">
+                        <ul>
+                            <li>Taller de Investigación II</li>
+                            <li>Redes de Computadoras</li>
+                            <li>Simulación</li>
+                            <li>Fundamentos de Desarrollo de Sistemas</li>
+                            <li>Interfaces</li>
+                            <li>Inglés VI</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ================= SÉPTIMO SEMESTRE ================= -->
+                <div class="semestre-card">
+                    <div class="lado frente"><span>Séptimo semestre</span></div>
+                    <div class="lado atras">
+                        <ul>
+                            <li>Programación WEB</li>
+                            <li>Sistemas Operativos</li>
+                            <li>Graficación</li>
+                            <li>Planificación y Modelado</li>
+                            <li>Contabilidad Financiera</li>
+                            <li>Sistemas Operativos Distribuidos</li>
+                            <li>Inglés VII</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ================= OCTAVO SEMESTRE ================= -->
+                <div class="semestre-card">
+                    <div class="lado frente"><span>Octavo semestre</span></div>
+                    <div class="lado atras">
+                        <ul>
+                            <li>Cultura Empresarial</li>
+                            <li>Formulación y Evaluación de Proyectos</li>
+                            <li>Inteligencia Artificial I</li>
+                            <li>Desarrollo de Proyectos de Software</li>
+                            <li>Sistemas Operativos Distribuidos II</li>
+                            <li>Aplicaciones WEB</li>
+                            <li>Inglés Técnico I</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ================= NOVENO SEMESTRE ================= -->
+                <div class="semestre-card">
+                    <div class="lado frente"><span>Noveno semestre</span></div>
+                    <div class="lado atras">
+                        <ul>
+                            <li>Residencia Profesional</li>
+                            <li>Bases de Datos Distribuidas</li>
+                            <li>Programación WEB con Bases de Datos</li>
+                            <li>Inglés Técnico II</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        `,
+
+            /* ===================================================
+               INGENIERÍA EN INNOVACIÓN AGRÍCOLA SUSTENTABLE
+            =================================================== */
+            "agricola": `
+            <h2>Ingeniería en Innovación Agrícola Sustentable</h2>
+
+            <h3>Objetivo</h3>
+            <p>
+                Formar profesionistas capaces de diseñar, optimizar y administrar sistemas agrícolas sustentables,
+                considerando factores ecológicos, tecnológicos y socioeconómicos.
+            </p>
+
+            <h3>Te puede interesar si cuentas con:</h3>
+            <ul>
+                <li>Interés por la tecnología agrícola y el desarrollo sustentable.</li>
+            </ul>
+
+            <h3>Perfil de egreso</h3>
+            <ul>
+                <li>Desarrollo de innovaciones agrícolas sustentables.</li>
+                <li>Manejo de sistemas de producción protegidos y no protegidos.</li>
+                <li>Diseño de métodos agrícolas basados en las necesidades regionales.</li>
+            </ul>
+
+            <h3>Campo laboral</h3>
+            <ul>
+                <li>Dependencias gubernamentales enfocadas en políticas y estrategias agrícolas.</li>
+                <li>ONG dedicadas a agricultura orgánica y sustentable.</li>
+                <li>Invernaderos, agroempresas y sector agrícola privado.</li>
+            </ul>
+
+            <h3>Asignaturas por semestre</h3>
+
+            <div class="semestres">
+
+                <!-- 1 -->
+                <div class="semestre-card">
+                    <div class="lado frente"><span>Primer semestre</span></div>
+                    <div class="lado atras">
+                        <ul>
+                            <li>Matemáticas</li>
+                            <li>Química</li>
+                            <li>Taller de Mecánica de Sólidos</li>
+                            <li>Biología</li>
+                            <li>Introducción a TI</li>
+                            <li>Seminario de Ética</li>
+                            <li>Desarrollo Sustentable</li>
+                            <li>Inglés I</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="semestre-card">
+                    <div class="lado frente"><span>Segundo semestre</span></div>
+                    <div class="lado atras">
+                        <ul>
+                            <li>Matemáticas II</li>
+                            <li>Química Analítica</li>
+                            <li>Ecología</li>
+                            <li>Termodinámica</li>
+                            <li>Botánica Aplicada</li>
+                            <li>Estadística</li>
+                            <li>Fundamentos de Investigación</li>
+                            <li>Inglés II</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="semestre-card">
+                    <div class="lado frente"><span>Tercer semestre</span></div>
+                    <div class="lado atras">
+                        <ul>
+                            <li>Matemáticas III</li>
+                            <li>Edafología</li>
+                            <li>Diseño Agrícola Asistido por Computadora</li>
+                            <li>Bioquímica</li>
+                            <li>Electromecánica</li>
+                            <li>Topografía</li>
+                            <li>Métodos Estadísticos</li>
+                            <li>Inglés III</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="semestre-card">
+                    <div class="lado frente"><span>Cuarto semestre</span></div>
+                    <div class="lado atras">
+                        <ul>
+                            <li>Hidráulica</li>
+                            <li>Agroclimatología</li>
+                            <li>Diseños Experimentales</li>
+                            <li>Fisiología Vegetal</li>
+                            <li>Microbiología</li>
+                            <li>Bases de Datos y SIG</li>
+                            <li>Taller de Investigación I</li>
+                            <li>Inglés IV</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="semestre-card">
+                    <div class="lado frente"><span>Quinto semestre</span></div>
+                    <div class="lado atras">
+                        <ul>
+                            <li>Biología Molecular</li>
+                            <li>Nutrición Vegetal</li>
+                            <li>Sistemas de Producción Agrícola</li>
+                            <li>Entomología Agrícola</li>
+                            <li>Fitopatología</li>
+                            <li>Sistemas de Riego Superficial</li>
+                            <li>Inglés V</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 6 -->
+                <div class="semestre-card">
+                    <div class="lado frente"><span>Sexto semestre</span></div>
+                    <div class="lado atras">
+                        <ul>
+                            <li>Desarrollo Comunitario</li>
+                            <li>Sistemas de Riego Presurizado</li>
+                            <li>Agroecología</li>
+                            <li>Olericultura</li>
+                            <li>Taller de Investigación II</li>
+                            <li>Agricultura Protegida</li>
+                            <li>Inglés VI</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 7 -->
+                <div class="semestre-card">
+                    <div class="lado frente"><span>Séptimo semestre</span></div>
+                    <div class="lado atras">
+                        <ul>
+                            <li>Agronegocios I</li>
+                            <li>Inocuidad y Bioseguridad</li>
+                            <li>Fertirrigación</li>
+                            <li>Manejo de Invernaderos</li>
+                            <li>Reciclaje de Productos</li>
+                            <li>Cultivos Hidropónicos</li>
+                            <li>Inglés VII</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 8 -->
+                <div class="semestre-card">
+                    <div class="lado frente"><span>Octavo semestre</span></div>
+                    <div class="lado atras">
+                        <ul>
+                            <li>Agronegocios II</li>
+                            <li>Plasticultura</li>
+                            <li>Cosecha de Agua</li>
+                            <li>Floricultura</li>
+                            <li>Manejo de Poscosecha</li>
+                            <li>Productos Orgánicos</li>
+                            <li>Inglés Técnico I</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 9 -->
+                <div class="semestre-card">
+                    <div class="lado frente"><span>Noveno semestre</span></div>
+                    <div class="lado atras">
+                        <ul>
+                            <li>Residencia Profesional</li>
+                            <li>Seminario de Tesis</li>
+                            <li>Inglés Técnico II</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        `,
+            "contaduria": `
+            <h2>Licenciatura en Contaduría</h2>
+
+            <h3>Objetivo</h3>
+            <p>
+                Formar profesionales que generen, analicen e interpreten información financiera para la toma de decisiones,
+                que protejan a las organizaciones de los riesgos económicos y contribuyan a lograr su competitividad en el
+                entorno global.
+            </p>
+
+            <h3>Te puede interesar si cuentas con:</h3>
+            <ul>
+                <li>Adaptabilidad y organización.</li>
+                <li>Vocación de servicio con valores éticos y responsabilidad.</li>
+                <li>Discreción y confiabilidad en el desempeño de actividades.</li>
+            </ul>
+
+            <h3>Perfil de egreso</h3>
+            <p>
+                El egresado de la Licenciatura en Contaduría será capaz de administrar los recursos financieros de las
+                organizaciones, mediante el registro oportuno de sus transacciones y la emisión de información veraz,
+                fehaciente y oportuna sobre su situación financiera.
+            </p>
+
+            <h3>Campo laboral</h3>
+            <ul>
+                <li>Ejercicio independiente como consultor.</li>
+                <li>Servicios profesionales en el sector público (federal, estatal y municipal).</li>
+                <li>Asesoría financiera a empresas de productos o servicios.</li>
+            </ul>
+
+            <h3>Asignaturas por semestre</h3>
+
+            <div class="semestres">
+
+                <!-- PRIMER SEMESTRE -->
+                <div class="semestre-card">
+                    <div class="lado frente"><span>Primer semestre</span></div>
+                    <div class="lado atras">
+                        <ul>
+                            <li>Contabilidad Básica</li>
+                            <li>Administración General</li>
+                            <li>Introducción al Derecho Civil</li>
+                            <li>Dinámica Psicosocial</li>
+                            <li>Matemáticas Administrativas</li>
+                            <li>Taller de Informática</li>
+                            <li>Inglés I</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- SEGUNDO SEMESTRE -->
+                <div class="semestre-card">
+                    <div class="lado frente"><span>Segundo semestre</span></div>
+                    <div class="lado atras">
+                        <ul>
+                            <li>Contabilidad Intermedia I</li>
+                            <li>Administración de Recursos Humanos I</li>
+                            <li>Derecho Constitucional, Administrativo e Internacional</li>
+                            <li>Fundamentos de Investigación</li>
+                            <li>Matemáticas Financieras</li>
+                            <li>Taller de Informática II</li>
+                            <li>Estadística Administrativa I</li>
+                            <li>Inglés II</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- TERCER SEMESTRE -->
+                <div class="semestre-card">
+                    <div class="lado frente"><span>Tercer semestre</span></div>
+                    <div class="lado atras">
+                        <ul>
+                            <li>Contabilidad Intermedia II</li>
+                            <li>Administración de Recursos Humanos II</li>
+                            <li>Derecho Laboral</li>
+                            <li>Derecho Mercantil</li>
+                            <li>Seminario de Ética</li>
+                            <li>Economía Empresarial</li>
+                            <li>Estadística Administrativa II</li>
+                            <li>Inglés III</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- CUARTO SEMESTRE -->
+                <div class="semestre-card">
+                    <div class="lado frente"><span>Cuarto semestre</span></div>
+                    <div class="lado atras">
+                        <ul>
+                            <li>Teoría Contable</li>
+                            <li>Costos Históricos</li>
+                            <li>Derecho Fiscal</li>
+                            <li>Taller de Investigación I</li>
+                            <li>Desarrollo Sustentable</li>
+                            <li>Entorno Macroeconómico de las Organizaciones</li>
+                            <li>Finanzas I</li>
+                            <li>Inglés IV</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- QUINTO SEMESTRE -->
+                <div class="semestre-card">
+                    <div class="lado frente"><span>Quinto semestre</span></div>
+                    <div class="lado atras">
+                        <ul>
+                            <li>Contabilidad Superior</li>
+                            <li>Costos Predeterminados</li>
+                            <li>Impuestos I</li>
+                            <li>Comercio Exterior</li>
+                            <li>Auditoría Financiera I</li>
+                            <li>Economía Internacional</li>
+                            <li>Finanzas II</li>
+                            <li>Inglés V</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- SEXTO SEMESTRE -->
+                <div class="semestre-card">
+                    <div class="lado frente"><span>Sexto semestre</span></div>
+                    <div class="lado atras">
+                        <ul>
+                            <li>Contabilidad de Sociedades</li>
+                            <li>Presupuestos</li>
+                            <li>Impuestos II</li>
+                            <li>Taller de Investigación II</li>
+                            <li>Auditoría Financiera II</li>
+                            <li>Taller de Informática III</li>
+                            <li>Finanzas III</li>
+                            <li>Inglés VI</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- SÉPTIMO SEMESTRE -->
+                <div class="semestre-card">
+                    <div class="lado frente"><span>Séptimo semestre</span></div>
+                    <div class="lado atras">
+                        <ul>
+                            <li>Costos para la Toma de Decisiones</li>
+                            <li>Impuestos III</li>
+                            <li>Administración de Operaciones</li>
+                            <li>Auditoría Fiscal</li>
+                            <li>Seminario de Derecho Fiscal</li>
+                            <li>Elaboración y Evaluación de Proyectos</li>
+                            <li>Inglés VII</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- OCTAVO SEMESTRE -->
+                <div class="semestre-card">
+                    <div class="lado frente"><span>Octavo semestre</span></div>
+                    <div class="lado atras">
+                        <ul>
+                            <li>Seminario de Contaduría</li>
+                            <li>Habilidades Directivas</li>
+                            <li>Contabilidad Gubernamental</li>
+                            <li>Taller de Prácticas Fiscales</li>
+                            <li>Contabilidad Bancaria</li>
+                            <li>Contabilidad Hotelera</li>
+                            <li>Seminario de Titulación</li>
+                            <li>Inglés Técnico I</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- NOVENO SEMESTRE -->
+                <div class="semestre-card">
+                    <div class="lado frente"><span>Noveno semestre</span></div>
+                    <div class="lado atras">
+                        <ul>
+                            <li>Residencia Profesional</li>
+                            <li>Inglés Técnico II</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+`
+
+        };
+
+        /* ============================================
+           EVENTOS PARA ABRIR MODALES
+        ============================================ */
+        botones.forEach(boton => {
+            boton.addEventListener("click", () => {
+                const carrera = boton.dataset.carrera;
+                modalContent.innerHTML = carreras[carrera];
+                modalOverlay.classList.remove("oculto");
+                activarFlip();
+            });
+        });
+
+        /* ============================================
+           CERRAR MODAL
+        ============================================ */
+        cerrar.addEventListener("click", () => {
+            modalOverlay.classList.add("oculto");
+        });
+
+        modalOverlay.addEventListener("click", (e) => {
+            if (e.target === modalOverlay) {
+                modalOverlay.classList.add("oculto");
+            }
+        });
+
+        /* ============================================
+           ACTIVAR EFECTO DE VOLTEO EN TARJETAS
+        ============================================ */
+        function activarFlip() {
+            const tarjetas = document.querySelectorAll(".semestre-card");
+            tarjetas.forEach(tarjeta => {
+                tarjeta.addEventListener("click", () => {
+                    tarjeta.classList.toggle("volteada");
+                });
+            });
+        }
+    </script>
+
+
+    <script>
+        const tarjetas = document.querySelectorAll(".semestre-card");
+
+        tarjetas.forEach(tarjeta => {
+            tarjeta.addEventListener("click", () => {
+                tarjeta.classList.toggle("volteada");
+            });
+        });
+    </script>
+
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(this);
+
+            fetch("https://script.google.com/macros/s/AKfycbwNafce_fmCWE28jG7cwkzBeUDyDvrhKYacpruz_sCH7eY065LJhabmvlXcZJfwhSPV/exec", {
+                method: "POST",
+                body: formData
+            })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.success) {
+                        alert("¡Mensaje enviado correctamente!");
+                        document.getElementById("contactForm").reset();
+                    } else {
+                        alert("Error: " + data.error);
+                    }
+                })
+                .catch(() => alert("Hubo un error al enviar el mensaje."));
+        });
+    </script>
+
+    <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("activado");
+        navLinks.classList.toggle("activo");
+    });
+
+    // Cerrar al hacer clic en un enlace
+    document.querySelectorAll("#nav-links a").forEach(link => {
+        link.addEventListener("click", () => {
+            hamburger.classList.remove("activado");
+            navLinks.classList.remove("activo");
+        });
+    });
+</script>
+
+
+
+
+
+</body>
